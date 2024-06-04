@@ -1,0 +1,12 @@
+[package]
+name = "kforward"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio = { version = "1.37.0", features = ["full"] }
+ratatui = "0.26.2"
+crossterm = "0.27.0"
+serde = { version = "1.0", features = ["derive"]}
+serde_yml = "0.0.7"
+dirs = "5.0.1"

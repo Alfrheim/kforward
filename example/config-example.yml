@@ -1,0 +1,17 @@
+contexts:
+  - context: cluster/Dev
+    namespaces:
+    - namespace: web
+      pods:
+      - service: backend-api
+        port: 8083
+      - service: identity-api
+        port: 8093
+  - context: cluster/Pre
+    namespaces:
+    - namespace: web
+      pods:
+      - service: backend-api
+        port: 8083
+      - service: identity-api
+        port: 8093
